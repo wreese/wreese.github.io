@@ -1,10 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Will's Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Personal website of [Your Name], mathematician.">
+<meta name="author" content="[Your Name]">
+
+<title>[Your Name]</title>
+
+<!-- Fonts & Style -->
+<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    color: #333;
+    font-family: 'Libre Baskerville', serif;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+
+  main {
+    max-width: 700px;
+    margin: 2rem auto 4rem auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+  header, footer {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+  }
+
+  header h2 {
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: normal;
+    color: #555;
+  }
+
+  hr {
+    margin: 3rem 0;
+    border: none;
+    border-top: 1px solid #ccc;
+  }
+
+  section h3 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: normal;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+
+  p, li {
+    text-align: justify;
+  }
+
+  footer p {
+    font-size: 0.9rem;
+    color: #888;
+  }
+
+  a {
+    color: #444;
+    text-decoration: none;
+    border-bottom: 1px dotted #444;
+  }
+
+  a:hover {
+    color: #000;
+    border-bottom: 1px solid #000;
+  }
+
+  /* Simple theorem-like environment styling */
+  .theorem {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background: #fdfdfd;
+  }
+
+  .theorem-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  /* MathJax centered block math example */
+  .equation {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+</style>
+
+<!-- MathJax for LaTeX rendering -->
+<script>
+  window.MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+    options: { skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'] }
+  };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" id="MathJax-script" async></script>
+
 </head>
 <body>
-  <h1>Welcome!</h1>
-  <p>Not much here yet.</p>
+<main>
+
+<header>
+  <h1>[Your Name]</h1>
+  <h2>[Your Position/Title], [Your Institution]</h2>
+</header>
+
+<p>Welcome to my personal homepage. I am a mathematician working in the fields of [research areas]. My primary interests lie in [keywords or short summary]. On this page, you will find my current research interests, selected publications, and ways to get in touch.</p>
+
+<hr>
+
+<section id="research">
+  <h3>Research Interests</h3>
+  <p>My work focuses on [brief description of your main topics]. I am particularly interested in questions such as the classification of [example topic], the properties of certain number-theoretic objects, and the interplay between [related fields].</p>
+
+  <div class="theorem">
+    <div class="theorem-title">A Sample Theorem</div>
+    <p><strong>Theorem.</strong> Let <em>n</em> be a positive integer. Then the function \(\zeta(s)\), originally defined for \(\text{Re}(s) > 1,\) admits an analytic continuation to the whole complex plane except for a simple pole at \(s=1.\)</p>
+  </div>
+
+  <p>To illustrate, consider the famous Riemann zeta function \(\zeta(s)\). By extending its definition and using the functional equation, we can analytically continue it beyond its initial domain of convergence. The functional equation is given by:</p>
+
+  <div class="equation">
+    \[
+    \zeta(s) = 2^s \pi^{s-1} \sin\left(\frac{\pi s}{2}\right)\Gamma(1-s)\zeta(1-s).
+    \]
+  </div>
+</section>
+
+<hr>
+
+<section id="publications">
+  <h3>Selected Publications</h3>
+  <ul>
+    <li><em>"Title of a Recent Paper"</em>, Journal of XYZ, Vol. A, No. B (Year), pp. 1–20.</li>
+    <li><em>"Another Important Article"</em>, Journal of ABC, Vol. C, No. D (Year), pp. 21–40.</li>
+    <li><em>"A Foundational Work on [Topic]"</em>, International Journal of Math, Vol. E, No. F (Year), pp. 101–130.</li>
+  </ul>
+</section>
+
+<hr>
+
+<section id="contact">
+  <h3>Contact</h3>
+  <p>You can reach me via email at: <a href="mailto:your_email@example.com">your_email@example.com</a></p>
+  <p>Or find me on <a href="https://github.com/yourusername" target="_blank">GitHub</a>.</p>
+</section>
+
+<footer>
+  <p>&copy; [Year] [Your Name]. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.</p>
+</footer>
+
+</main>
 </body>
 </html>
